@@ -1,0 +1,29 @@
+name: 问题反馈
+description: 提供复现信息，方便排查机器人运行问题。
+body:
+  - type: markdown
+    attributes:
+      value: 请勿粘贴真实 .env、AppSecret、API Key、完整群消息或个人信息。日志和截图请先脱敏。
+  - type: input
+    id: environment
+    attributes:
+      label: 运行环境
+      placeholder: Windows 11 / Python 3.14 / 使用的源码版本
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 如何复现，以及期望结果与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: 已做的检查
+      description: 如离线测试、自检、群内 /ping，注明哪些已通过。
+  - type: textarea
+    id: logs
+    attributes:
+      label: 已脱敏的相关错误
+      render: text

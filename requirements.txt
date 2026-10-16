@@ -1,0 +1,4 @@
+nonebot2[httpx,websockets]==2.5.0
+nonebot-adapter-qq==1.7.3
+httpx==0.28.1
+python-dotenv==1.2.4
